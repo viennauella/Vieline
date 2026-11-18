@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vieline - Kelola Proyek & Tugas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/home">Vieline<span>.</span></a>
+    <nav class="authed-only">
+      <a href="#/dashboard" data-nav="dashboard">Dashboard</a>
+      <a href="#/projects" data-nav="projects">Proyek</a>
+    </nav>
+    <div class="tools">
+      <div id="swatches" aria-label="Warna aksen"></div>
+      <button id="themeBtn" class="icon-btn" data-act="theme" title="Ganti mode gelap/terang">🌙</button>
+      <a class="btn ghost sm guest-only" href="#/login">Masuk</a>
+      <a class="btn primary sm guest-only" href="#/register">Daftar</a>
+      <span id="userName" class="authed-only muted"></span>
+      <button class="btn ghost sm authed-only" data-act="logout">Keluar</button>
+    </div>
+  </header>
+
+  <main id="view"></main>
+  <div id="modal" class="modal hidden"></div>
+  <div id="pomo" class="pomo hidden"></div>
+  <div id="toasts"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
